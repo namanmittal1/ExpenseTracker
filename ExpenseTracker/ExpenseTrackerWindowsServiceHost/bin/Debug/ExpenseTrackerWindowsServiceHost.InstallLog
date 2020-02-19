@@ -1,0 +1,42 @@
+﻿Installing assembly 'E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.InstallLog
+   assemblypath = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe
+Installing service Expense Tracker Services...
+Service Expense Tracker Services has been successfully installed.
+Creating EventLog source Expense Tracker Services in log Application...
+Committing assembly 'E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.InstallLog
+   assemblypath = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe
+Uninstalling assembly 'E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.InstallLog
+   assemblypath = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe
+Removing EventLog source Expense Tracker Services.
+Service Expense Tracker Services is being removed from the system...
+Service Expense Tracker Services was successfully removed from the system.
+Installing assembly 'E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.InstallLog
+   assemblypath = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe
+Installing service Expense Tracker Services...
+Service Expense Tracker Services has been successfully installed.
+Creating EventLog source Expense Tracker Services in log Application...
+Committing assembly 'E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.InstallLog
+   assemblypath = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe
+Uninstalling assembly 'E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.InstallLog
+   assemblypath = E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Debug\ExpenseTrackerWindowsServiceHost.exe
+Removing EventLog source Expense Tracker Services.
+Service Expense Tracker Services is being removed from the system...
+Service Expense Tracker Services was successfully removed from the system.

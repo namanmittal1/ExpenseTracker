@@ -1,0 +1,78 @@
+[2016-03-03 12:24:26,553] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 12:24:26,559] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 12:24:26,560] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 12:24:27,896] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel MoveNextStopped
+[2016-03-03 12:30:57,986] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 12:30:57,993] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 12:30:57,994] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 12:31:01,022] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel MoveNextStopped
+[2016-03-03 12:35:20,735] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 12:35:20,743] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 12:35:20,744] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 12:35:52,184] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 12:35:52,190] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 12:35:52,191] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 12:52:33,225] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 12:52:33,231] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 12:52:33,232] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 12:59:22,874] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 12:59:22,881] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 12:59:22,883] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 13:00:08,106] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 13:00:08,114] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 13:00:08,114] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 13:01:55,803] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 13:01:55,809] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 13:01:55,809] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 13:46:14,389] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 13:46:14,398] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 13:46:14,400] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 14:10:26,845] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 14:10:26,852] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 14:10:26,853] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 14:20:31,719] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 14:20:31,726] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 14:20:31,729] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 14:21:47,017] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 14:21:47,025] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 14:21:47,026] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 14:29:12,646] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 14:29:12,656] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 14:29:12,659] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-03 14:30:27,139] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-03 14:30:27,147] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-03 14:30:27,148] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-09 11:09:07,905] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-09 11:09:07,912] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-09 11:09:07,912] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-09 11:11:57,390] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-09 11:11:57,397] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-09 11:11:57,398] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-09 11:14:27,685] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-09 11:14:27,695] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-09 11:14:27,695] [8] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-09 11:21:19,522] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-09 11:21:19,529] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-09 11:21:19,529] [10] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-03-09 11:25:29,786] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-03-09 11:25:29,793] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-03-09 11:25:29,794] [9] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-04-10 21:10:20,816] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-04-10 21:10:20,827] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-04-10 21:10:20,827] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-04-10 21:10:22,221] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel MoveNextStopped
+[2016-04-10 21:10:24,437] [1] [INFO ] ExpenseTracker.NavigationModule.ViewModels.WorkflowPanelViewModel ShowLoginView Started
+[2016-04-10 21:10:46,730] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-04-10 21:10:46,740] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-04-10 21:10:46,741] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-04-10 21:10:47,850] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel MoveNextStopped
+[2016-04-10 21:12:37,587] [1] [INFO ] ExpenseTracker.NavigationModule.ViewModels.WorkflowPanelViewModel ShowLoginView Started
+[2016-04-10 21:16:37,783] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-04-10 21:16:37,793] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-04-10 21:16:37,793] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-04-10 21:16:40,926] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel MoveNextStopped
+[2016-04-10 21:16:56,521] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel+<Login>d__0 MoveNext Started
+[2016-04-10 21:16:56,531] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsync Started
+[2016-04-10 21:16:56,531] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel LoginMethodAsyncStopped
+[2016-04-10 21:16:57,905] [1] [INFO ] ExpenseTracker.MainRegionModule.ViewModels.LoginViewModel MoveNextStopped
+[2016-04-10 21:16:59,716] [1] [INFO ] ExpenseTracker.NavigationModule.ViewModels.WorkflowPanelViewModel ShowLoginView Started

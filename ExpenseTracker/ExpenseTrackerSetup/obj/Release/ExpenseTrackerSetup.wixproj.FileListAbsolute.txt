@@ -1,0 +1,8 @@
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\bin\Release\ExpenseTrackerSetup.msi
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\bin\Release\ExpenseTrackerSetup.wixpdb
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Release\Product.wixobj
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Release\ExpenseTrackerSetup.msi
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Release\ExpenseTrackerSetup.wixpdb
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Release\ExpenseTrackerSetup.wixproj.BindContentsFileList.txt
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Release\ExpenseTrackerSetup.wixproj.BindOutputsFileList.txt
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Release\ExpenseTrackerSetup.wixproj.BindBuiltOutputsFileList.txt

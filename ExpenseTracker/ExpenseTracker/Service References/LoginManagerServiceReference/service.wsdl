@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoginManagerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ExpenseCommon" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILoginManagerService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_GetCurrentUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentUser" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_GetCurrentUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_GetUsersCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersCount" />
+  </wsdl:message>
+  <wsdl:message name="ILoginManagerService_GetUsersCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersCountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILoginManagerService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginManagerService/Login" message="tns:ILoginManagerService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginManagerService/LoginResponse" message="tns:ILoginManagerService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginManagerService/Logout" message="tns:ILoginManagerService_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginManagerService/LogoutResponse" message="tns:ILoginManagerService_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginManagerService/GetCurrentUser" message="tns:ILoginManagerService_GetCurrentUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginManagerService/GetCurrentUserResponse" message="tns:ILoginManagerService_GetCurrentUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginManagerService/GetUsersCount" message="tns:ILoginManagerService_GetUsersCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginManagerService/GetUsersCountResponse" message="tns:ILoginManagerService_GetUsersCount_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILoginManagerService" type="tns:ILoginManagerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/ILoginManagerService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/ILoginManagerService/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentUser">
+      <soap:operation soapAction="http://tempuri.org/ILoginManagerService/GetCurrentUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersCount">
+      <soap:operation soapAction="http://tempuri.org/ILoginManagerService/GetUsersCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoginManagerService">
+    <wsdl:port name="BasicHttpBinding_ILoginManagerService" binding="tns:BasicHttpBinding_ILoginManagerService">
+      <soap:address location="http://localhost:8733/LoginManagerService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

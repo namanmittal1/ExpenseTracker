@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ExpenseTracker.NavigationModule.Views.WorkflowPanelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="180">
+    <Grid>
+        <StackPanel>
+            <Button Name="btnAddUpdateCategory" Width="180" Height="60" Content="Manage categories" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Command="{Binding Path=NavigateManageCategoriesCommand}"/>
+            <Separator Foreground="Blue" Background="Blue" Margin="0,4,0,4"/>
+            <Button Name="btnEnterExpense" Width="180" Height="60" Content="Enter Expense" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Command="{Binding Path=NavigateEnterExpenseView}"/>
+            <Separator Foreground="Blue" Background="Blue" Margin="0,4,0,4"/>
+            <Button Name="btnShowStatisticsAnalytics" Width="180" Height="60" Content="S / A" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Command="{Binding Path=NavigateStatisticsAnalyticsView}"/>
+            <Separator Foreground="Blue" Background="Blue" Margin="0,4,0,4"/>
+            <Button Name="btnLogout" Width="180" Height="60" Content="Logout and Exit" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Command="{Binding Path=NavigateLogoutView}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

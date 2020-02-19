@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9349a12f-6419-4a49-9222-b4a852b0455e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/ExpenseService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="4c82e66e-014d-4759-90dc-7c0b18fe1253" SourceId="1" SourceUrl="http://localhost:8733/ExpenseService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="0a73b262-dd37-4241-a22a-5e506edbaa6c" SourceId="1" SourceUrl="http://localhost:8733/ExpenseService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="b9ab0218-5aa2-4138-a774-48c52bc9aebc" SourceId="1" SourceUrl="http://localhost:8733/ExpenseService/mex" />
+    <MetadataFile FileName="ExpenseTrackerService.ExpenseModule.xsd" MetadataType="Schema" ID="634ed549-f340-41de-b074-999ddc0e369a" SourceId="1" SourceUrl="http://localhost:8733/ExpenseService/mex" />
+    <MetadataFile FileName="ExpenseCommon.xsd" MetadataType="Schema" ID="03a36d6f-faab-4507-91d1-d790b84fc942" SourceId="1" SourceUrl="http://localhost:8733/ExpenseService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

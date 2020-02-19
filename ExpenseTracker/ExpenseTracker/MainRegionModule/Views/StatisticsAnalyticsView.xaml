@@ -1,0 +1,185 @@
+﻿<UserControl x:Class="ExpenseTracker.MainRegionModule.Views.StatisticsAnalyticsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts" 
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:converter="clr-namespace:ExpenseTracker.Converters"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="580">
+    <UserControl.Resources>
+        <ResourceDictionary>
+        <Style x:Key="ChartStyle" TargetType="{x:Type vc:Chart}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset=".5"/>
+                        <GradientStop Color="#FFB2ADAD" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="BorderThickness" Value="5"/>
+        </Style>
+        <Style x:Key="TitleStyle" TargetType="{x:Type vc:Title}">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontColor" Value="LightGray"/>
+        </Style>
+            <converter:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/CommonStylesResources/Theme1CommonStyles/CommonStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </UserControl.Resources>
+
+    <Grid Name="grdAnalyticsView">
+        <i:Interaction.Triggers>
+            <i:EventTrigger
+                EventName="Loaded">
+                <i:InvokeCommandAction
+                    Command="{Binding LoadedCommand}" CommandParameter="{Binding ElementName=grdAnalyticsView}" />
+            </i:EventTrigger>
+        </i:Interaction.Triggers>
+        
+        <TabControl>
+            <i:Interaction.Triggers>
+                <i:EventTrigger
+                EventName="SelectionChanged">
+                    <i:InvokeCommandAction
+                    Command="{Binding TabControlSelectionChanged}" CommandParameter="{Binding ElementName=tbItemStatistics}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            
+            <TabItem Name="tbItemAnalytics" Header="Analytics" Width="285" Selector.IsSelected="True">
+
+                <Grid>                   
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="33"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Search criteria:" Grid.ColumnSpan="2" Style="{StaticResource LabelStyle}"/>
+                      
+                        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+                            <CheckBox Name="cbCategory" Height="25" IsChecked="{Binding IsCbCategoriesChecked}" Content="Categories" FontFamily="Times New Roman" FontSize="18" Margin="20,0,0,0"/>
+                            <CheckBox Name="cbItems"  Height="25" Content="Items" IsChecked="{Binding IsCbItemsChecked}" Margin="40,0,0,0"/>
+                            <CheckBox Name="cbPeriod" Height="25" Content="Period" IsChecked="{Binding IsCbPeriodChecked}"   Margin="40,0,0,0"/>
+                            <CheckBox Name="cbSource" Height="25" Content="Source" IsChecked="{Binding IsCbSourceChecked}"  Margin="40,0,0,0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" IsEnabled="{Binding IsStkCategoriesEnabled}">
+                            <Label Content="Categories: " Style="{StaticResource LabelStyle}"/>
+                            <ComboBox Name="cmbCategories" IsEditable="True" Width="150" Margin="10,0,0,0" Height="25"
+                            ItemsSource="{Binding Path=Categories, Mode=TwoWay}" DisplayMemberPath="CategoryName"
+                            SelectedValue="{Binding Path=SelectedCategory, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2"  Grid.Column="1"  Orientation="Horizontal" IsEnabled="{Binding IsStkItemsEnabled}">
+                            <Label Content="Items: " Style="{StaticResource LabelStyle}"/>
+                            <ComboBox Name="cmbItems" IsEditable="True" Width="150" Margin="10,0,0,0" Height="25"
+                            ItemsSource="{Binding Path=Items, Mode=TwoWay}" DisplayMemberPath="ItemName"  Text="{Binding ItemTextChanged, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            SelectedValue="{Binding Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" IsEnabled="{Binding IsStkPeriodEnabled}">
+                            <Label Content="Period:         From: " Style="{StaticResource LabelStyle}"/>
+                            <DatePicker Name="dtpkrFrom" Width="140" FontSize="18" SelectedDate="{Binding DateFrom}" SelectedDateFormat="Short"/>
+                            <Label Content="To: " Style="{StaticResource LabelStyle}" Margin="20,0,0,0"/>
+                            <DatePicker Name="dtpkrTo" Width="140" FontSize="18"  SelectedDate="{Binding DateTo}" SelectedDateFormat="Short"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="4"  Grid.Column="0" Orientation="Horizontal" IsEnabled="{Binding IsStkSourceEnabled}">
+                            <Label Content="Source: " Style="{StaticResource LabelStyle}"/>
+                            <ComboBox Name="cmbSource" Width="150" Margin="10,0,0,0" Height="25" SelectedValue="{Binding Path=SelectedSource, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}">
+                                <ComboBoxItem>Home</ComboBoxItem>
+                                <ComboBoxItem>Office</ComboBoxItem>
+                                <ComboBoxItem>None</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="4"  Grid.Column="1" Orientation="Horizontal">
+                            <Button Name="btnSearch" Content="Search" Command="{Binding SearchCommand}" FontFamily="Times New Roman" FontSize="18" Width="150" Margin="70,0,0,0" Height="25"/>
+                        </StackPanel>
+
+                    </Grid>
+
+                    <DataGrid Grid.Row="1" Width="560" ItemsSource="{Binding Data}"
+                              CanUserReorderColumns="False" CanUserResizeColumns="False" 
+                              CanUserResizeRows="False" CanUserSortColumns="True" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Category" Binding="{Binding CategoryName}"  />
+                            <DataGridTextColumn Header="Item name" Binding="{Binding ItemName}" />
+                            <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" />
+                            <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" />
+                            <DataGridTextColumn Header="Remarks" Binding="{Binding Remarks}" />
+                            <DataGridTextColumn Header="Source" Binding="{Binding Source}" />
+                            <DataGridTextColumn Header="Date of expense" Binding="{Binding Date}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    
+                    <Grid Background="Snow" Grid.RowSpan="2" Opacity=".8"
+         Visibility="{Binding Path=AdornerVisibility,Mode=TwoWay, 
+            UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <Image MaxWidth="300"
+               gif:ImageBehavior.AutoStart="True"
+               gif:ImageBehavior.AnimatedSource="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\Images\images.gif"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+
+                </Grid>
+                
+            </TabItem>
+            
+            <TabItem Name="tbItemStatistics" Header="Statistics" Width="285">
+                <Grid>
+                    <vc:Chart Theme="Theme1" Style="{StaticResource ChartStyle}">
+                        <vc:Chart.Titles>
+                            <vc:Title Text="Major expenses of last month" Style="{StaticResource TitleStyle}"/>
+                        </vc:Chart.Titles>
+                        
+                        <vc:Chart.Series>
+                            
+                            <vc:DataSeries RenderAs="Column">
+                                <vc:DataSeries.DataPoints>
+                                    <vc:DataPoint YValue="{Binding FirstColumnValue}" AxisXLabel="{Binding FirstColumnName}"/>
+                                    <vc:DataPoint YValue="{Binding SecondColumnValue}" AxisXLabel="{Binding SecondColumnName}"/>
+                                    <vc:DataPoint YValue="{Binding ThirdColumnValue}" AxisXLabel="{Binding ThirdColumnName}"/>
+                                    <vc:DataPoint YValue="{Binding FourthColumnValue}" AxisXLabel="{Binding FourthColumnName}"/>
+                                    <vc:DataPoint YValue="{Binding FifthColumnValue}" AxisXLabel="{Binding FifthColumnName}"/>
+                                </vc:DataSeries.DataPoints>                               
+                            </vc:DataSeries>
+                            
+                            <!--<vc:DataSeries RenderAs="Line">
+                                <vc:DataSeries.DataPoints>
+                                    <vc:DataPoint YValue="18"/>
+                                    <vc:DataPoint YValue="42"/>
+                                    <vc:DataPoint YValue="46"/>
+                                    <vc:DataPoint YValue="62"/>
+                                    <vc:DataPoint YValue="28"/>
+                                    <vc:DataPoint YValue="10"/>
+                                </vc:DataSeries.DataPoints>
+                            </vc:DataSeries>-->
+                            
+                        </vc:Chart.Series>
+                    </vc:Chart>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

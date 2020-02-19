@@ -1,0 +1,13 @@
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\EntityFramework.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\System.Data.SQLite.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\System.Data.SQLite.EF6.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\System.Data.SQLite.Linq.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\EntityFramework.xml
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\bin\Debug\System.Data.SQLite.xml
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\ExpenseTracker\ExpenseTracker\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

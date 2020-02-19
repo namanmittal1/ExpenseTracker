@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ExpenseTrackerService.StatisticsAnalyticsModule" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ExpenseTrackerService.StatisticsAnalyticsModule" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfAnalyticsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnalyticsData" nillable="true" type="tns:AnalyticsData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnalyticsData" nillable="true" type="tns:ArrayOfAnalyticsData" />
+  <xs:complexType name="AnalyticsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="RadioHomeSelected" type="xs:int" />
+      <xs:element minOccurs="0" name="RadioNoneSelected" type="xs:int" />
+      <xs:element minOccurs="0" name="RadioOfficeSelected" type="xs:int" />
+      <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnalyticsData" nillable="true" type="tns:AnalyticsData" />
+  <xs:complexType name="ArrayOfStatisticsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StatisticsData" nillable="true" type="tns:StatisticsData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStatisticsData" nillable="true" type="tns:ArrayOfStatisticsData" />
+  <xs:complexType name="StatisticsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpenseAmount" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StatisticsData" nillable="true" type="tns:StatisticsData" />
+</xs:schema>

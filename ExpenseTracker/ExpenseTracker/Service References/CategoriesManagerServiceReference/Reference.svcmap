@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="517fcfe9-96b2-408a-b5a9-84fda1e7567c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/CategoriesManagerService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="dd1645ac-830e-42b9-ba79-90b391e1d370" SourceId="1" SourceUrl="http://localhost:8733/CategoriesManagerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="58cef69c-6aa3-497c-a7ca-0d2a6bf1b544" SourceId="1" SourceUrl="http://localhost:8733/CategoriesManagerService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="335666db-f3ca-4231-9ab6-4d4eb31ff0e2" SourceId="1" SourceUrl="http://localhost:8733/CategoriesManagerService/mex" />
+    <MetadataFile FileName="ExpenseCommon.xsd" MetadataType="Schema" ID="44db73e8-e618-49c2-bb10-e74907d2a05c" SourceId="1" SourceUrl="http://localhost:8733/CategoriesManagerService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

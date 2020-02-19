@@ -1,0 +1,143 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!-- Theme color palette -->
+    <Color x:Key="Black">#1B1A1B</Color>
+    <Color x:Key="DarkGrey">#252425</Color>
+    <Color x:Key="MediumGrey">#343334</Color>
+    <Color x:Key="LightGrey">#666666</Color>
+    <Color x:Key="HighlightGrey">#CCCCCC</Color>
+    <Color x:Key="HighlightBlue">#0AA7FF</Color>
+    <Color x:Key="HighlightBlueDeeper">#0272AE</Color>
+    <Color x:Key="HighlightGreen">#41DE42</Color>
+    <Color x:Key="HighlightGreenDeeper">#35B536</Color>
+    <Color x:Key="White">#FFFFFF</Color>
+
+
+    <!-- Main Element colors -->
+   
+    <SolidColorBrush x:Key="BackgroundColor" Color="#1B1A1B" />
+    <SolidColorBrush x:Key="BackgroundColor50" Color="#801B1A1B" />
+    <SolidColorBrush x:Key="WindowBackgroundColor" Color="#020202" />
+    <SolidColorBrush x:Key="PanelBackgroundColor" Color="#1B1A1B" />
+    <SolidColorBrush x:Key="HighlightedPanelBackgroundColor" Color="#252425" />
+    <SolidColorBrush x:Key="PanelOutlineColor" Color="#404041" />
+    <SolidColorBrush x:Key="BlackBrush" Color="#1B1A1B" />
+    <SolidColorBrush x:Key="TextColor" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="BorderColor" Color="#1B1A1B" />
+    <SolidColorBrush x:Key="HighlightColor" Color="#0AA7FF" />
+    <SolidColorBrush x:Key="HighlightGreenColor" Color="#41DE42" />
+    <SolidColorBrush x:Key="WhiteBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="FontColor" Color="#FFFFFF" />
+    
+    <!-- Buttons -->
+    <StaticResource x:Key="ButtonTopColor" ResourceKey="MediumGrey"/>
+    <StaticResource x:Key="ButtonBottomColor" ResourceKey="DarkGrey"/>
+    <StaticResource x:Key="ButtonTextColor" ResourceKey="White"/>
+    <StaticResource x:Key="ButtonBorderColor" ResourceKey="Black"/>
+    <StaticResource x:Key="ButtonInnerShadowColor" ResourceKey="MediumGrey"/>
+    <StaticResource x:Key="ButtonHoverTopColor" ResourceKey="DarkGrey"/>
+    <StaticResource x:Key="ButtonHoverBottomColor" ResourceKey="MediumGrey"/>
+    <StaticResource x:Key="ButtonPressedTopColor" ResourceKey="HighlightBlueDeeper"/>
+    <StaticResource x:Key="ButtonPressedBottomColor" ResourceKey="HighlightBlue"/>
+    <StaticResource x:Key="ButtonPressedTextColor" ResourceKey="White"/>
+    <StaticResource x:Key="ButtonActiveTopColor" ResourceKey="Black"/>
+    <StaticResource x:Key="ButtonActiveBottomColor" ResourceKey="DarkGrey"/>
+    <StaticResource x:Key="ButtonActiveTextColor" ResourceKey="HighlightBlue"/>
+    <StaticResource x:Key="ButtonActiveBarTextColor" ResourceKey="HighlightBlue"/>
+
+    <SolidColorBrush x:Key="ButtonTopColorBrush" Color="#343334"/>
+    <SolidColorBrush x:Key="ButtonBottomColorBrush" Color="#252425"/>
+    <SolidColorBrush x:Key="ButtonTextColorBrush" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonBorderColorBrush" Color="#1B1A1B"/>
+    <SolidColorBrush x:Key="ButtonInnerShadowColorBrush" Color="#343334"/>
+    <SolidColorBrush x:Key="ButtonHoverTopColorBrush" Color="#252425"/>
+    <SolidColorBrush x:Key="ButtonHoverBottomColorBrush" Color="#343334"/>
+    <SolidColorBrush x:Key="ButtonActiveTopColorBrush" Color="#0272AE"/>
+    <SolidColorBrush x:Key="ButtonActiveBottomColorBrush" Color="#0AA7FF"/>
+    <SolidColorBrush x:Key="ButtonActiveTextColorBrush" Color="#1B1A1B"/>
+
+    <LinearGradientBrush x:Key="NavBarGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#343334" Offset="0.1" />
+        <GradientStop Color="#252425" Offset=".9" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource DarkGrey}" Offset="0.1" />
+        <GradientStop Color="{DynamicResource Black}" Offset=".9" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonActiveGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Black}" Offset="0.1" />
+        <GradientStop Color="{DynamicResource DarkGrey}" Offset=".9" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonIndentGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Black}" Offset="0.1" />
+        <GradientStop Color="{DynamicResource DarkGrey}" Offset=".9" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ContainerGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource DarkGrey}" Offset="0.1" />
+        <GradientStop Color="{DynamicResource Black}" Offset=".9" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonOverGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource HighlightBlueDeeper}" Offset="0.1" />
+        <GradientStop Color="{DynamicResource HighlightBlue}" Offset=".5" />
+        <GradientStop Color="{DynamicResource HighlightBlue}" Offset="0.5" />
+        <GradientStop Color="{DynamicResource HighlightBlueDeeper}" Offset=".9" />
+    </LinearGradientBrush>
+                         
+    <LinearGradientBrush x:Key="ButtonDisabledGradient" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource MediumGrey}" Offset="0.1" />
+        <GradientStop Color="{DynamicResource LightGrey}" Offset=".5" />
+        <GradientStop Color="{DynamicResource LightGrey}" Offset="0.5" />
+        <GradientStop Color="{DynamicResource MediumGrey}" Offset=".9" />
+    </LinearGradientBrush>
+
+
+    <!-- Glyphs -->
+
+
+    <SolidColorBrush x:Key="GlyphBrush" Color="#ffffff" />
+
+    <Color x:Key="LightBlueBackgroundColor">#e6edf7</Color>
+    <SolidColorBrush x:Key="LightBlueBackgroundSolidColorBrush" Color="{DynamicResource LightBlueBackgroundColor}"></SolidColorBrush>
+
+    
+
+    <Color x:Key="LightBlueBorderColor">#6593cf</Color>
+    <SolidColorBrush x:Key="LightBlueBorderColorSolidColorBrush" Color="{DynamicResource LightBlueBorderColor}"></SolidColorBrush>
+
+    <SolidColorBrush x:Key="HorizontalSliderTrackNormalBackground" Color="LightBlue" />
+    <LinearGradientBrush x:Key="HorizontalSliderTrackNormalBorder" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFAEB1AF" Offset="0.1" />
+        <GradientStop Color="White" Offset=".9" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="LightGrayBrush" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#D3D3D3" Offset="0.1" />
+        <GradientStop Color="#D3D3D3" Offset="0.9" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="GreyBrush" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#808080" Offset="0.1" />
+        <GradientStop Color="#808080" Offset="0.9" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="LightBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="#FFF" Offset="0.0"/>
+                <GradientStop Color="#EEE" Offset="1.0"/>
+            </GradientStopCollection>
+        </GradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="NormalBorderBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="#CCC" Offset="0.0"/>
+                <GradientStop Color="#444" Offset="1.0"/>
+            </GradientStopCollection>
+        </GradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <FontFamily x:Key="FontFamily">TimesNewRoman</FontFamily>
+</ResourceDictionary>

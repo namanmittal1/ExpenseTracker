@@ -1,0 +1,2 @@
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Debug\ExpenseTrackerSetup.msi
+E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerSetup\obj\Debug\ExpenseTrackerSetup.wixpdb

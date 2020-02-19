@@ -1,0 +1,5 @@
+E:\ExpenseTracker\ExpenseTracker\CoreBusinessManager\bin\Debug\CoreBusinessManager.dll
+E:\ExpenseTracker\ExpenseTracker\CoreBusinessManager\bin\Debug\CoreBusinessManager.pdb
+E:\ExpenseTracker\ExpenseTracker\CoreBusinessManager\obj\Debug\CoreBusinessManager.csprojResolveAssemblyReference.cache
+E:\ExpenseTracker\ExpenseTracker\CoreBusinessManager\obj\Debug\CoreBusinessManager.dll
+E:\ExpenseTracker\ExpenseTracker\CoreBusinessManager\obj\Debug\CoreBusinessManager.pdb

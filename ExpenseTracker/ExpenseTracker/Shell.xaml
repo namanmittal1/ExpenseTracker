@@ -1,0 +1,36 @@
+﻿<Window x:Class="ExpenseTracker.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800"
+       xmlns:prism="http://www.codeplex.com/CompositeWPF"
+        xmlns:local="clr-namespace:ExpenseTracker"  ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary Source="/CommonStylesResources/Theme1CommonStyles/CommonStyles.xaml"/>
+    </Window.Resources>
+    <Grid Style="{StaticResource WindowBackgroundStyle}">        
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="440"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource MainHeaderStyle}">Welcome to Expense Manager</Label>
+
+        <Border BorderThickness="4" CornerRadius="4" Grid.Row="1" Grid.Column="0" BorderBrush="Gray">
+        <ContentControl  prism:RegionManager.RegionName="{x:Static local:RegionNames.MainRegion}"></ContentControl>
+        </Border>
+
+        <Border BorderThickness="4" CornerRadius="4" Grid.Row="1" Grid.Column="1" BorderBrush="Gray">
+        <ContentControl  prism:RegionManager.RegionName="{x:Static local:RegionNames.NavigationRegion}"></ContentControl>
+        </Border>
+
+        <Border BorderThickness="2" CornerRadius="4" Grid.Row="2" Grid.ColumnSpan="2" BorderBrush="Gray">
+        <ContentControl  prism:RegionManager.RegionName="{x:Static local:RegionNames.StatusBarRegion}"></ContentControl>
+        </Border>
+    </Grid>
+</Window>

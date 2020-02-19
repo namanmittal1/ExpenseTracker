@@ -1,0 +1,4 @@
+E:\ExpenseTracker\ExpenseTracker\ExpenseCommon\bin\Release\ExpenseCommon.dll
+E:\ExpenseTracker\ExpenseTracker\ExpenseCommon\bin\Release\ExpenseCommon.pdb
+E:\ExpenseTracker\ExpenseTracker\ExpenseCommon\obj\Release\ExpenseCommon.dll
+E:\ExpenseTracker\ExpenseTracker\ExpenseCommon\obj\Release\ExpenseCommon.pdb

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ExpenseTrackerService.ExpenseModule" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ExpenseTrackerService.ExpenseModule" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/ExpenseCommon" />
+  <xs:complexType name="Expense">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExpenseID" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ExpenseCommon" minOccurs="0" name="LoggedInUser" nillable="true" type="q1:User" />
+      <xs:element minOccurs="0" name="RadioHomeSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RadioNoneSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RadioOfficeSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ExpenseCommon" minOccurs="0" name="SelectedCategory" nillable="true" type="q2:Category" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ExpenseCommon" minOccurs="0" name="SelectedItem" nillable="true" type="q3:Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Expense" nillable="true" type="tns:Expense" />
+</xs:schema>

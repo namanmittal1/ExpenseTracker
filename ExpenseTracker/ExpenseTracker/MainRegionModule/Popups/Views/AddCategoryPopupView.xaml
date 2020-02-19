@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ExpenseTracker.MainRegionModule.Views.AddCategoryPopupView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="170" d:DesignWidth="320">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/CommonStylesResources/Theme1CommonStyles/CommonStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Style="{StaticResource WindowBackgroundStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblAddNewCategoryHeader" Content="Add new Category" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource LabelStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="lblAddNewCategory"  Content="Name" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Style="{StaticResource LabelStyle}" VerticalAlignment="Center"/>
+        <TextBox Name="txtCategory" Grid.Column="1" Grid.Row="2" Width="180" HorizontalAlignment="Center" Text="{Binding NewCategory, Mode=OneWayToSource}"/>
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Margin="0,20,40,0"  HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Name="btnAddNewCategory" Content="Add"  Width="80" Height="30" Command="{Binding Path = AddCategoryCommand}" />
+            <Button Name="btnCancel" Content="Cancel" Width="80" Height="30" Margin="5,0,0,0" Command="{Binding Path = CancelAddCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Product Id="*" Name="Expense Tracker" Language="1033" Version="1.0.0.0" Manufacturer="Naman Mittal" UpgradeCode="cdfb0ce6-b9d7-4fe2-ade1-bdcf9cb600b0">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Installs Expense Tracker"/>
+    
+  <Property Id="SOURCEDIRECTORY" Value="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release" />
+		<MajorUpgrade DowngradeErrorMessage="A newer version of Expense Tracker is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+
+      <Directory Id="TARGETDIR" Name="SourceDir">
+        <Directory Id="ProgramFilesFolder">
+          <Directory Id="INSTALLFOLDER" Name="ExpenseTracker">
+            <Directory Id="X86FOLDER" Name="x86"/>
+            <Directory Id="X64FOLDER" Name="x64"/>
+            <Directory Id="EXPENSETRACKERSERVICEFOLDER" Name="ExpenseTrackerService">
+              <Directory Id="X86FOLDERService" Name="x86"/>
+              <Directory Id="X64FOLDERService" Name="x64"/>
+              <Directory Id="EXPENSETRACKERDATABASEFOLDER" Name="ExpenseTrackerDataBase"/>
+            </Directory>
+          </Directory>
+        </Directory>
+        <Directory Id="ProgramMenuFolder">
+          <Directory Id="ApplicationProgramsFolderShortcut" Name="Expense Tracker"/>
+        </Directory>
+        <Directory Id="DesktopFolder" Name="Desktop"/>
+      </Directory>
+
+    <Icon Id="ExpenseTracker.ico" SourceFile="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseTracker.ico" />
+
+    <DirectoryRef Id="ApplicationProgramsFolderShortcut">
+      <Component Id="ApplicationShortcut" Guid="82BC40E3-CBAE-49C7-ABD7-A9C292F1AFFD">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="Expense Tracker"
+                  Description="Expense Tracker"
+                  Target="[#ExpenseTrackerexe]"
+                  WorkingDirectory="INSTALLFOLDER"/>
+        
+        <Shortcut Id="DesktopMenuShortcut"
+                          Directory="DesktopFolder"
+                          Name="Expense Tracker"
+                          Icon="ExpenseTracker.ico"
+                          Description="Expense Tracker"
+                          Target="[#ExpenseTrackerexe]"
+                          WorkingDirectory="INSTALLFOLDER"/>
+        
+        <RemoveFolder Id="ApplicationProgramsFolderShortcut" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\ExpenseTracker" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+     <Feature Id="ProductFeature" Title="ExpenseTrackerSetup" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcut" />
+    </Feature>
+    
+	</Product>
+  
+  <Fragment>
+    <PackageGroup Id="Netfx45Xxx">
+      <ExePackage Id="Netfx45Xxx" Cache="no" Compressed="no" PerMachine="yes" Permanent="yes" Vital="yes" InstallCommand="/q"
+          SourceFile="E:\ExpenseTracker\ExpenseTracker\dotNetFx45_Full_setup.exe"
+          DetectCondition="(Netfx4FullVersion=&quot;4.5.50709&quot;) AND (NOT VersionNT64 OR (Netfx4x64FullVersion=&quot;4.5.50709&quot;))"
+          InstallCondition="(VersionNT >= v6.0 OR VersionNT64 >= v6.0) AND (NOT (Netfx4FullVersion=&quot;4.5.50709&quot; OR Netfx4x64FullVersion=&quot;4.5.50709&quot;))"/>
+    </PackageGroup>
+  </Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->  
+    
+      	<Component Id="ReleaseFolderComponent" Guid="FB222725-7060-4FAD-BEC2-4D6E4837AEAC" KeyPath="yes">
+<File Id="EntityFrameworkdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\EntityFramework.dll" /> 
+<File Id="EntityFrameworkSqlServerdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\EntityFramework.SqlServer.dll" /> 
+<File Id="EntityFrameworkSqlServerxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\EntityFramework.SqlServer.xml" /> 
+<File Id="EntityFrameworkxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\EntityFramework.xml" /> 
+<File Id="ExpenseLogstxt" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseLogs.txt" /> 
+<File Id="ExpenseTrackerexe" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseTracker.exe" /> 
+<File Id="ExpenseTrackerexeconfig" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseTracker.exe.config" /> 
+<File Id="ExpenseTrackerpdb" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseTracker.pdb" /> 
+<File Id="ExpenseTrackervshostexe" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseTracker.vshost.exe" /> 
+<!--
+          <File Id="ExpenseTrackervshostexemanifest" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\ExpenseTracker.vshost.exe.manifest" /> 
+-->
+<File Id="log4netdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\log4net.dll" /> 
+<File Id="log4netxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\log4net.xml" /> 
+<File Id="MicrosoftPracticesPrismCompositiondll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Composition.dll" /> 
+<File Id="MicrosoftPracticesPrismCompositionxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Composition.xml" /> 
+<File Id="MicrosoftPracticesPrismInteractivitydll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Interactivity.dll" /> 
+<File Id="MicrosoftPracticesPrismInteractivityxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Interactivity.xml" /> 
+<File Id="MicrosoftPracticesPrismMefExtensionsdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.MefExtensions.dll" /> 
+<File Id="MicrosoftPracticesPrismMefExtensionsxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.MefExtensions.xml" /> 
+<File Id="MicrosoftPracticesPrismMvvmDesktopdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Mvvm.Desktop.dll" /> 
+<File Id="MicrosoftPracticesPrismMvvmdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Mvvm.dll" /> 
+<File Id="MicrosoftPracticesPrismMvvmxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.Mvvm.xml" /> 
+<File Id="MicrosoftPracticesPrismPubSubEventsdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.PubSubEvents.dll" /> 
+<File Id="MicrosoftPracticesPrismSharedInterfacesdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.SharedInterfaces.dll" /> 
+<File Id="MicrosoftPracticesPrismSharedInterfacesxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.Prism.SharedInterfaces.xml" /> 
+<File Id="MicrosoftPracticesServiceLocationdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.ServiceLocation.dll" /> 
+<File Id="MicrosoftPracticesServiceLocationxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\Microsoft.Practices.ServiceLocation.xml" /> 
+<File Id="SystemDataSQLitedll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.dll" /> 
+<File Id="SystemDataSQLiteEF6dll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.EF6.dll" /> 
+<File Id="SystemDataSQLiteLinqdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.Linq.dll" /> 
+<File Id="SystemDataSQLitexml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.xml" /> 
+<File Id="SystemWindowsInteractivitydll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Windows.Interactivity.dll" /> 
+<File Id="WpfAnimatedGifdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\WpfAnimatedGif.dll" /> 
+<File Id="WpfAnimatedGifxml" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\WpfAnimatedGif.xml" /> 
+<File Id="WPFVisifireChartsdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\WPFVisifire.Charts.dll" />   
+      
+         
+      <RemoveFile Id="ALLFILES" Name="*.*" On="both" />
+        
+      </Component>
+      
+      <Component Id="X86FolderComponent" Guid="2A549DA1-4018-4E26-A608-EBC25FB6F2F2" KeyPath="yes" Directory="X86FOLDER">
+           <File Id="X86SQLiteInteropdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\x86\SQLite.Interop.dll" />
+      </Component>
+
+      <Component Id="X64FolderComponent" Guid="6917317A-D56D-42CF-A030-027DCFF7197C" KeyPath="yes" Directory="X64FOLDER">
+        <File Id="X64SQLiteInteropdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\x64\SQLite.Interop.dll" />
+      </Component>
+
+      <Component Id="X86FolderComponentService" Directory="X86FOLDERService">
+        <File Id="X86SQLiteInteropdllService" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\x86\SQLite.Interop.dll" />
+      </Component>
+
+      <Component Id="X64FolderComponentService" Directory="X64FOLDERService">
+        <File Id="X64SQLiteInteropdllService" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\x64\SQLite.Interop.dll" />
+      </Component>
+
+      <Component Id="DataBaseComponent" Guid="FF0E0B92-8A8B-4290-9713-48094ACCC2BA" KeyPath="yes" Directory="EXPENSETRACKERDATABASEFOLDER">
+         <File Id="ExpenseTrackerdb" Source="E:\ExpenseTracker\ExpenseTracker.db" />
+       </Component>
+      
+          <Component Id="ExpenseTrackerServiceFolder" Directory="EXPENSETRACKERSERVICEFOLDER" Guid="3E112ECE-14EB-4C20-A7BE-164994BDC9C9" KeyPath="yes">
+      <File Id="DataAccessLayerdll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\DataAccessLayer.dll" /> 
+<File Id="ExpenseCommondll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\ExpenseCommon.dll" /> 
+<File Id="ExpenseTrackerServicedll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\ExpenseTrackerService.dll" /> 
+<File Id="ExpenseTrackerWindowsServiceHostexeconfig" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\ExpenseTrackerWindowsServiceHost.exe.config" /> 
+<File Id="ExpenseTrackerWindowsServiceHostInstallLog" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\ExpenseTrackerWindowsServiceHost.InstallLog" />
+            <File Id="ExpenseTrackerWindowsServiceHostSystemDatadll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\System.Data.dll" />
+            <File Id="ExpenseTrackerWindowsServiceHostSystemServiceModeldll" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\System.ServiceModel.dll" />           
+            <File Id="SystemDataSQLitedllService" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.dll" />
+            <File Id="SystemDataSQLiteEF6dllService" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.EF6.dll" />
+            <File Id="SystemDataSQLiteLinqdllService" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTracker\bin\Release\System.Data.SQLite.Linq.dll" />
+            
+          </Component>      
+      
+      <Component Id="CMP_Service" Directory="EXPENSETRACKERSERVICEFOLDER" Guid="FC1350E5-9392-4AD4-9662-C67856A907FF">
+        <!-- Install service executable -->
+        <File Id="ExpenseTrackerWindowsServiceHostexe" Source="E:\ExpenseTracker\ExpenseTracker\ExpenseTrackerWindowsServiceHost\bin\Release\ExpenseTrackerWindowsServiceHost.exe" />
+
+        <!-- Install service -->
+        <ServiceInstall Id="InstallELS"
+                        
+                        Name="ExpenseTrackerService"
+                        DisplayName="ExpenseTrackerService"
+                        Description="ExpenseTrackerService"
+                        Start="auto"
+                        ErrorControl="normal"
+                        Type="ownProcess"/>
+        <!-- Set start/stop/remove options -->
+        <ServiceControl Id="ControllELS"
+                        Name="ExpenseTrackerService"
+                        Start="install"
+                        Stop="both"
+                        Remove="uninstall"
+                        Wait="yes" />
+      </Component>
+
+    </ComponentGroup>
+	</Fragment>
+</Wix>
